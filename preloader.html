@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" type="text/css" href="style2.css">
+	<title>Endangered Animals</title>
+</head>
+<body>
+	<div id="main">
+		<header id="header">
+			<div class="wrap">
+				<h1>Our New Website</h1>
+				
+			</div>
+		</header>
+		<br><br><br>
+		<section id="contents">
+			<div class="wrap">
+				<img src="" alt="">
+				<br><br>
+				<div class="loader">
+					<div class="load">
+					<div id="count" class="percentage" style="width: 0%;"></div>
+					</div>
+
+					<div class="info">
+						<span>0%</span>
+						<span id="progess">0%</span>
+						<span>100%</span>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+		</section>
+		
+
+	</div>
+<script type="text/javascript">
+	var elem = document.getElementById("count");
+	var width = 0;
+	var id = setInterval(frame,50);
+	function frame() 
+	{
+		if (width >= 100) 
+		{
+			clearInterval(id);
+			window.open('index.html','_self');
+		}
+		else
+		{
+			width++;
+			elem.style.width = width + '%';
+			document.getElementById("progess").innerHTML = width * 1 + '%';
+		}
+	}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,510 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<style>
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("bg2.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    transition: 0.5s;
+    min-height: 100vh;
+}
+body.night
+{
+    background: #00151f;
+}
+.toggle
+{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background: #fff;
+    border: 2px solid #00151f;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.toggle.active
+{
+    background: #00151f;
+    border: 2px solid #fff;
+}
+.toggle:before
+{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #00151f;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.toggle.active:before
+{
+    left: 27px;
+    background: #fff;
+}
+.content
+{
+    margin: 100px auto;
+    width: 1000px;
+}
+.content h1
+{
+    margin: 0 0 20px;
+    padding: 0;
+    color: #000;
+    transition: 0.5s;
+}
+.content p
+{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    transition: 0.5s;
+    font-size: 18px;
+}
+body.night .content h1,
+body.night .content p
+{
+    color: #fff;
+}
+.team
+{
+    margin: 75px auto;
+}
+.ot
+{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+    padding-bottom: 10px;
+}
+.ot:after
+{
+    content: '';
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+}
+/*4:53min*/
+.profile
+{
+    margin-top: 25px; 
+}
+.profile .img-box
+{
+    opacity: 1;
+    display: block;
+    position: relative;
+}/*7:44*/
+.profile h2
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.profile h3
+{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.img-box:after
+{
+    content: '';
+    opacity: 0;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.img-box ul
+{
+    margin: 0;
+    padding: 20px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.img-box ul li
+{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 7px;
+    display: inline-block;  
+}
+.img-box a
+{
+    color: #fff;
+}
+.img-box:hover:after
+{
+    opacity: 1;
+}
+.img-box:hover ul
+{
+    opacity: 1;
+}
+.img-box a:hover li
+{
+    color: #007bff;
+    border: 1px solid #007bff
+}
+.img-box:after, .img-box ul, .img-box ul li
+{
+    transition: all 0.5s ease-in-out 0s;
+}
+#cu:after
+{
+    content: '';
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+}
+.change_content:after
+{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+@keyframes changetext
+{
+    0%{content: "NATURE"}
+    25%{content: "ANIMALES"}
+    50%{content: "HUMANS"}
+    75%{content: "EARTH"}
+    100%{content: "UNIVERSE"}
+}
+</style>
+</head>
+<body>
+
+   <!-nav bar->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+   <div class="container">
+   <a class="navbar-brand" href="#"><h1 class="animated infinite heartBeat"><img src="output-onlinepngtools.png" style="height: 60px; width:60px;"></h1></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+ </button>
+
+ <div class="collapse navbar-collapse" id="basicExampleNav">
+                    <div class="navbar-nav mr-auto w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Continents</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </div>
+                  
+                </div>
+				</div>
+				</nav>
+				
+        <div id="intro" class="view">
+
+            <div class="mask rgba-black-strong">
+
+                <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+
+                    <div class="row d-flex justify-content-center text-center">
+
+                        <div class="col-md-10">
+
+                            
+                            <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">DANGER FOR <span class="change_content"></h2>
+                            <hr class="hr-light">
+
+                            <h4 class="white-text my-4"></h4>
+                            <button type="button" class="btn btn-outline-white">Read more<i class="fa fa-book ml-2"></i></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+  
+
+    
+    
+  
+    <main class="mt-5">
+        <div class="container">
+
+            <section id="best-features" class="text-center">
+                            <!-Somec information->
+                <h2 class="mb-5 font-weight-bold">ENDANGERED WILDLIFED</h2>
+
+                <div class="row d-flex justify-content-center mb-4">
+
+                    <div class="col-md-8">
+                      <p class="grey-text">From the mountaintops to the deep sea, these animals need our protection. Endangered species are those at highest risk for extinction. The more you know about these beautiful creatures, the more you're going to feel the need to help save them, visit the World Wildlife Fund for more information.</p>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                  <div class="col-md-4 mb-5">
+                        <i class="fa fa-camera-retro fa-4x orange-text"></i>
+                        <h4 class="my-4 font-weight-bold">Extinction</h4>
+                        <p class="grey-text">Extinction, in biology, the dying out or extermination of a species. Extinction occurs when species are diminished because of environmental forces (habitat fragmentation, global change, natural disaster, overexploitation of species for human use) or because of evolutionary changes in their members .</p>
+                    </div>
+                    <div class="col-md-4 mb-1">
+                        <i class="fa fa-heart fa-4x orange-text"></i>
+                        <h4 class="my-4 font-weight-bold"> Endangered</h4>
+                        <p class="grey-text"> Endangered species, any species that is at risk of extinction because of a sudden rapid decrease in its population or a loss of its critical habitat. Previously, any species of plant or animal that was threatened with extinction could be called an endangered species. 
+</p>
+                    </div>
+                    <div class="col-md-4 mb-1">
+                        <i class="fa fa-bicycle fa-4x orange-text"></i>
+                        <h4 class="my-4 font-weight-bold">Adventure</h4>
+                        <p class="grey-text">De-extinction, also known as resurrection biology, or species revivalism is the process of creating an organism, which is either a member of, or resembles an extinct species, or breeding population of such organisms.</p>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-full team information->
+            <section class="team">
+                <div class="container">
+                    <h1 class="ot">Our Team</h1>
+                    <div class="row">
+                        <div class="col-md-2 profile text-center">
+                            <div class="img-box">
+                                <!-individual team members photo->
+                                <img src="member1.jpg" class="img-responsive" style="height: 200px">
+                                <ul>
+                                    <!-individual team members socialsite->
+                                    <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                                    <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                                    <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                                </ul>
+                            </div>
+                            <!-individual team information->
+                            <h2>Kalim</h2>
+                            <h3>Founder/CEO</h3>
+                            <p>We create to this</p>
+                            <p>for helping nature</p> 
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2 profile text-center">
+                            <div class="img-box">
+                                <!-individual team members photo->
+                                <img src="member1.jpg" class="img-responsive" style="height: 200px">
+                                <ul>
+                                    <!-individual team members socialsite->
+                                    <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                                    <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                                    <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                                </ul>
+                            </div>
+                            <!-individual team information->
+                            <h2>Soguffta</h2>
+                            <h3>Co-Founder</h3>
+                            <p>We create to this</p>
+                            <p>for helping nature</p>  
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2 profile text-center">
+                            <div class="img-box">
+                                <!-individual team members photo->
+                                <img src="member1.jpg" class="img-responsive" style="height: 200px">
+                                <ul><!-individual team members socialsite->
+                                    <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                                    <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                                    <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                                </ul>
+                            </div>
+                            <!-individual team information->
+                            <h2>Neha</h2>
+                            <h3>Managing Director</h3>
+                           <p>We create to this</p>
+                            <p>for helping nature</p>   
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2 profile text-center">
+                            <div class="img-box">
+                                <!-individual team members photo->
+                                <img src="member1.jpg" class="img-responsive" style="height: 200px">
+                                <ul>
+                                    <!-individual team members socialsite->
+                                    <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                                    <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                                    <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                                </ul>
+                            </div>
+                            <!-individual team information->
+                            <h2>Koushik</h2>
+                            <h3>Employee</h3>
+                            <p>We create to this</p>
+                            <p>for helping nature</p>  
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </section>
+       <div>    
+            <hr class="my-5">
+<!-contact us->
+           <section id="contact">
+
+                <h2 class="mb-5 font-weight-bold text-center" id="cu">Contact us</h2>
+                <div class="row">
+            <div class="col-12">
+                
+                <p class="mb-5">
+                  Nullam tincidunt, lacus a suscipit luctus, elit turpis tincidunt dui,
+                  non tempus sem turpis vitae lorem. Maecenas eget odio in sapien ultrices
+                  viverra vitae vel leo. Curabitur at elit eu risus pharetra pellentesque
+                  at at velit.
+                </p>
+            </div>
+            
+            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+              <a href="tel:0100200340" class="tm-contact-item-link">
+                  <img src="https://img.icons8.com/cute-clipart/64/000000/ringing-phone.png">
+                  <span class="mb-0">010-020-0340</span>
+              </a>              
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+              <a href="mailto:info@company.co" class="tm-contact-item-link">
+                 <img src="https://img.icons8.com/color/64/000000/circled-envelope.png">
+                  <span class="mb-0">info@company.co</span>
+              </a>              
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+              <a href="https://www.google.com/maps" class="tm-contact-item-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="64" height="64"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M62.3715,145.0648l-52.6965,16.86245v-135.3425l52.6535,-16.84955l47.3,17.2l52.6965,-16.86245v135.3425l-52.6535,16.84955z" fill="#3498db"></path><path d="M62.30485,10.87255l46.60985,16.94845l0.69015,0.25155l0.69875,-0.2236l50.9464,-16.30345v133.085l-51.55485,16.49695l-46.60985,-16.94845l-0.69015,-0.25155l-0.69875,0.2236l-50.9464,16.30345v-133.085l51.55485,-16.49695M163.4,8.6l-53.75,17.2l-47.3,-17.2l-53.75,17.2v137.6l53.75,-17.2l47.3,17.2l53.75,-17.2v-137.6z" fill="#ba9b48"></path><path d="M109.65,161.25l-47.3,-17.2v-133.3l47.3,17.2z" fill="#ffffff"></path><path d="M109.65215,138.10525c-4.9579,-5.8351 -31.17715,-37.88515 -31.17715,-62.85525c0,-17.18925 13.98575,-31.175 31.175,-31.175c17.18925,0 31.175,13.98575 31.175,31.175c0,25.1636 -26.20635,57.0438 -31.17285,62.85525z" fill="#2ecc71"></path><path d="M109.65,45.15c16.598,0 30.1,13.502 30.1,30.1c0,23.64355 -23.64355,53.48555 -30.0957,61.189c-6.44785,-7.73785 -30.1043,-37.7282 -30.1043,-61.189c0,-16.598 13.502,-30.1 30.1,-30.1M109.65,43c-17.8106,0 -32.25,14.4394 -32.25,32.25c0,28.1736 32.25,64.5 32.25,64.5c0,0 32.25,-36.1028 32.25,-64.5c0,-17.8106 -14.4394,-32.25 -32.25,-32.25z" fill="#c74343"></path><g><path d="M109.65,89.225c-7.7056,0 -13.975,-6.2694 -13.975,-13.975c0,-7.7056 6.2694,-13.975 13.975,-13.975c7.7056,0 13.975,6.2694 13.975,13.975c0,7.7056 -6.2694,13.975 -13.975,13.975z" fill="#f2faff"></path><path d="M109.65,62.35c7.1251,0 12.9,5.7749 12.9,12.9c0,7.1251 -5.7749,12.9 -12.9,12.9c-7.1251,0 -12.9,-5.7749 -12.9,-12.9c0,-7.1251 5.7749,-12.9 12.9,-12.9M109.65,60.2c-8.299,0 -15.05,6.751 -15.05,15.05c0,8.299 6.751,15.05 15.05,15.05c8.299,0 15.05,-6.751 15.05,-15.05c0,-8.299 -6.751,-15.05 -15.05,-15.05z" fill="#c74343"></path></g></g></g></svg>
+                  <span class="mb-0">Location on Maps</span>
+              </a>              
+            </div>
+        </div>
+            </section>
+
+        </div>
+    </main>
+    <!-footer copy right->
+    <footer class="page-footer font-small unique-color-dark">
+
+
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href=""> ENDANGER WORK</a>
+        </div>
+        <!-company social sites->
+                <div class="container" style="justify-content: center;">
+  <div class="row justify-content-center">
+    <div class="col-md-1"></div>
+    <div class="col-md-2">
+     <a href="#" class="link"><img src="https://img.icons8.com/officel/80/000000/facebook.png"></a>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+      <a href="#" class="link"><img src="https://img.icons8.com/officel/80/000000/twitter.png"></a>
+    </div>
+   
+    <div class="col-md-3">
+       <a href="#" class="link"><img src="https://img.icons8.com/color/96/000000/instagram-new.png"></a>
+
+    </div>
+
+  </div>
+</div>
+          
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.4.0/lib/darkmode-js.min.js"></script>
+<script type="text/javascript">
+   // $(document).ready(function(){
+  //    $('.toggle').click(function(){
+  //          $('.toggle').toggleClass('active')
+  //          $('body').toggleClass('night')
+  //      })
+  //  })
+  const options = 
+  {
+      bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+  }
+  const darkmode = new Darkmode(options);
+
+  darkmode.showWidget();
+  
+</script>
+</body>
+</html>
