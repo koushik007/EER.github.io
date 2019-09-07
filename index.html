@@ -91,10 +91,10 @@ body.night .content p
 {
     color: #fff;
 }
-.team
+/*.team
 {
     margin: 75px auto;
-}
+}*/
 .ot
 {
     text-align: center;
@@ -212,6 +212,105 @@ body.night .content p
     75%{content: "EARTH"}
     100%{content: "UNIVERSE"}
 }
+.team
+{
+    font-family: Merienda;
+    background-image: url(img4.png);
+    background-repeat: 100vh;
+}
+h1
+		{
+			color: #fff;
+			margin: 40px 0 60px 0;
+			font-weight: 600;
+			text-align: center;
+			text-shadow: 0 2px 20px #000;
+		}
+		.single-team
+		{
+			position: relative;
+			transition: 0.5s;
+			margin-bottom: 30px;
+			width: 100%;
+			height: 300px;
+			text-align: center;
+			overflow: hidden;/*(doudt full)*/
+		}
+		.single-team img
+		{
+			border-radius: 25%;
+			margin-bottom: 20px;
+			width: 110px;
+			border: 2.56px solid #fafafa;
+			margin-top: 25px;
+		}
+		.single-team h3
+		{
+			font-size: 20px;
+			font-weight: 700;
+		}
+		.socials
+		{
+			margin-top: 18px;
+		}
+		.single-team p
+		{
+			margin-bottom: 0;
+		}
+		.side-two
+		{
+			padding: 60px 20px;
+			text-align: center;
+			background: linear-gradient(to bottom, #2f286c, #aa3461);
+			color: #fff;
+			width: 100%;
+			height: 300px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	    .socials a
+	    {
+	    	color: #262626;
+	    	border-radius: 50%;
+	    	width: 40px;
+	    	height: 40px;
+	    	background: #fafafa;
+	    	display: inline-block;
+	    }
+	    .socials a i
+	    {
+	    	padding-top: 10px;
+	    }
+	    .socials a:hover
+	    {
+	    	background: #262626;
+	    }
+	    .socials a:hover i
+	    {
+	    	color: red;
+	    	transform: scale(1.2);
+	    	transition: 0.9s;
+	    }
+	    .side-one
+	    {
+	    	background: #262626;
+	    	padding: 15px;
+	    	bottom: 0;
+	    	transition: .5s;
+	    	color: #fff;
+	    	width: 100%;
+	    	height: 300px;
+	    	position: relative;
+	    	z-index: 10;
+	    }
+	    .single-team:hover .side-one
+	    {
+	    	bottom: -300px;
+	    	transition: 0.5s;
+
+	    }
+	
 </style>
 </head>
 <body>
@@ -317,91 +416,72 @@ body.night .content p
             </section>
             <!-full team information->
             <section class="team">
-                <div class="container">
-                    <h1 class="ot">Our Team</h1>
-                    <div class="row">
-                        <div class="col-md-2 profile text-center">
-                            <div class="img-box">
-                                <!-individual team members photo->
-                                <img src="member1.jpg" class="img-responsive" style="height: 200px">
-                                <ul>
-                                    <!-individual team members socialsite->
-                                    <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                                </ul>
-                            </div>
-                            <!-individual team information->
-                            <h2>Kalim</h2>
-                            <h3>Founder/CEO</h3>
-                            <p>We create to this</p>
-                            <p>for helping nature</p> 
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-2 profile text-center">
-                            <div class="img-box">
-                                <!-individual team members photo->
-                                <img src="member1.jpg" class="img-responsive" style="height: 200px">
-                                <ul>
-                                    <!-individual team members socialsite->
-                                    <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                                </ul>
-                            </div>
-                            <!-individual team information->
-                            <h2>Soguffta</h2>
-                            <h3>Co-Founder</h3>
-                            <p>We create to this</p>
-                            <p>for helping nature</p>  
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-2 profile text-center">
-                            <div class="img-box">
-                                <!-individual team members photo->
-                                <img src="member1.jpg" class="img-responsive" style="height: 200px">
-                                <ul><!-individual team members socialsite->
-                                    <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                                </ul>
-                            </div>
-                            <!-individual team information->
-                            <h2>Neha</h2>
-                            <h3>Managing Director</h3>
-                           <p>We create to this</p>
-                            <p>for helping nature</p>   
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-2 profile text-center">
-                            <div class="img-box">
-                                <!-individual team members photo->
-                                <img src="member1.jpg" class="img-responsive" style="height: 200px">
-                                <ul>
-                                    <!-individual team members socialsite->
-                                    <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                                </ul>
-                            </div>
-                            <!-individual team information->
-                            <h2>Koushik</h2>
-                            <h3>Employee</h3>
-                            <p>We create to this</p>
-                            <p>for helping nature</p>  
-                        </div>
-
-
-
-
-
-
-
+<h1>Team Section</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="single-team">
+                    <div class="side-one">
+                        <img src="member2.jpg" alt="" class="img-fluid">
+                        <h3>Soguffta</h3>
+                        <p>Lead Web-Desighner</p>
+                    </div>
+                    <div class="side-two">
+                        <span>
+                            Sogufta is our Web-desighner for the last 2 years.She has successfully completed over 20 projects on her own.
+                        </span>
+                        <p class="socials">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </p>
                     </div>
                 </div>
-            </section>
-       <div>    
-            <hr class="my-5">
+            </div>
+            <div class="col-lg-4">
+                <div class="single-team">
+                    <div class="side-one">
+                        <img src="member2.jpg" alt="" class="img-fluid">
+                        <h3>Neha</h3>
+                        <p>Lead Content-Writer</p>
+                    </div>
+                    <div class="side-two">
+                        <span>
+                            Neha is our Content-Writer for the last 2 years.She has successfully completed over 20 projects on her own.
+                        </span>
+                        <p class="socials">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="single-team">
+                    <div class="side-one">
+                        <img src="member2.jpg" alt="" class="img-fluid">
+                        <h3>Koushik</h3>
+                        <p>Lead Fontend-devoloper</p>
+                    </div>
+                    <div class="side-two">
+                        <span>
+                            Koushik is our Lead Fontend-devoloper for the last 2 years.He has successfully completed over 20 projectson his own.
+                        </span>
+                        <p class="socials">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-contact us->
            <section id="contact">
 
@@ -471,6 +551,8 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 </div>
           
     </footer>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
