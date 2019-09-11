@@ -2,8 +2,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <style>
 html,
@@ -14,7 +16,7 @@ header,
 }
 
 #intro {
-    background: url("bg2.png");
+    background: url("image1.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -91,10 +93,10 @@ body.night .content p
 {
     color: #fff;
 }
-.team
+/*.team
 {
     margin: 75px auto;
-}
+}*/
 .ot
 {
     text-align: center;
@@ -206,20 +208,131 @@ body.night .content p
 }
 @keyframes changetext
 {
-    0%{content: "NATURE"}
-    25%{content: "ANIMALES"}
-    50%{content: "HUMANS"}
-    75%{content: "EARTH"}
-    100%{content: "UNIVERSE"}
+    0%{content: "WILDLIFE"}
+    25%{content: "NATURE"}
+    50%{content: "ANIMALES"}
+    75%{content: "HUMANS"}
+    100%{content: "EARTH"}
 }
-</style>
-</head>
-<body>
+.team
+{
+    font-family: Merienda;
+    background-image: url(img4.png);
+    background-repeat: 100vh;
+}
+h1
+		{
+			color: #fff;
+			margin: 40px 0 60px 0;
+			font-weight: 600;
+			text-align: center;
+			text-shadow: 0 2px 20px #000;
+		}
 
+b
+		{
+			color: #fff;
+			margin: 40px 0 60px 0;
+			font-weight: 600;
+			text-align: center;
+			text-shadow: 0 2px 20px #000;
+		}
+		.single-team
+		{
+			position: relative;
+			transition: 0.5s;
+			margin-bottom: 30px;
+			width: 100%;
+			height: 300px;
+			text-align: center;
+			overflow: hidden;/*(doudt full)*/
+		}
+		.single-team img
+		{
+			border-radius: 25%;
+			margin-bottom: 20px;
+			width: 110px;
+			border: 2.56px solid #fafafa;
+			margin-top: 25px;
+		}
+		.single-team h3
+		{
+			font-size: 20px;
+			font-weight: 700;
+		}
+		.socials
+		{
+			margin-top: 18px;
+		}
+		.single-team p
+		{
+			margin-bottom: 0;
+		}
+		.side-two
+		{
+			padding: 60px 20px;
+			text-align: center;
+			background: linear-gradient(to bottom, #2f286c, #aa3461);
+			color: #fff;
+			width: 100%;
+			height: 300px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	    .socials a
+	    {
+	    	color: #262626;
+	    	border-radius: 50%;
+	    	width: 40px;
+	    	height: 40px;
+	    	background: #fafafa;
+	    	display: inline-block;
+	    }
+	    .socials a i
+	    {
+	    	padding-top: 10px;
+	    }
+	    .socials a:hover
+	    {
+	    	background: #262626;
+	    }
+	    .socials a:hover i
+	    {
+	    	color: red;
+	    	transform: scale(1.2);
+	    	transition: 0.9s;
+	    }
+	    .side-one
+	    {
+	    	background: #262626;
+	    	padding: 15px;
+	    	bottom: 0;
+	    	transition: .5s;
+	    	color: #fff;
+	    	width: 100%;
+	    	height: 300px;
+	    	position: relative;
+	    	z-index: 10;
+	    }
+	    .single-team:hover .side-one
+	    {
+	    	bottom: -300px;
+	    	transition: 0.5s;
+
+	    }
+		
+		
+				    
+</style>
+</head> 
+<body>  
+        
    <!-nav bar->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+   
+ <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
    <div class="container">
-   <a class="navbar-brand" href="#"><h1 class="animated infinite heartBeat"><img src="output-onlinepngtools.png" style="height: 60px; width:60px;"></h1></a>
+   <a class="navbar-brand" href="#"><h4 class="animated infinite swing">WILDLIFE IN DANGER</h4></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
  </button>
@@ -232,9 +345,20 @@ body.night .content p
                         <li class="nav-item">
                             <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">Continents</a>
-                        </li>
+                        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Continents
+        
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="africa.html">Africa</a>
+          <a class="dropdown-item" href="asia.html">Asia</a>
+          <a class="dropdown-item" href="australia.html">Australia</a>
+          <a class="dropdown-item" href="europe.html">Europe</a>
+          <a class="dropdown-item" href="north america.html">North America</a>
+          <a class="dropdown-item" href="south america.html">South America</a>
+        </div>
+      </li>
                         
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About Us</a>
@@ -245,176 +369,146 @@ body.night .content p
                     </div>
                   
                 </div>
+                </div>
+                </nav>                  
+                </div>
 				</div>
-				</nav>
+				
+				
 				
         <div id="intro" class="view">
-
+        
             <div class="mask rgba-black-strong">
-
+        
                 <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-
+        
                     <div class="row d-flex justify-content-center text-center">
-
+        
                         <div class="col-md-10">
-
                             
-                            <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">DANGER FOR <span class="change_content"></h2>
+                            <h2 class="display-4 font-weight-bold text-danger pt-5 mb-2">DANGER FOR<p><span class="change_content"></span></p></h2>
                             <hr class="hr-light">
-
+        
                             <h4 class="white-text my-4"></h4>
-                            <button type="button" class="btn btn-outline-white">Read more<i class="fa fa-book ml-2"></i></button>
-
                         </div>
-
+        
                     </div>
-
+        
                 </div>
-
+        
             </div>
-
+        
         </div>
-  
-
-    
-    
-  
+        
+        
+        
+        
+        
     <main class="mt-5">
         <div class="container">
-
-            <section id="best-features" class="text-center">
+        
+            <section id="best-features" class="text-center"  class="shadow p-3 mb-5 bg-white rounded">
                             <!-Somec information->
+							<div><img src="https://img.icons8.com/cute-clipart/256/000000/cat-footprint.png"></div>
                 <h2 class="mb-5 font-weight-bold">ENDANGERED WILDLIFED</h2>
-
+        
                 <div class="row d-flex justify-content-center mb-4">
-
+        
                     <div class="col-md-8">
                       <p class="grey-text">From the mountaintops to the deep sea, these animals need our protection. Endangered species are those at highest risk for extinction. The more you know about these beautiful creatures, the more you're going to feel the need to help save them, visit the World Wildlife Fund for more information.</p>
-
+        
                     </div>
-
+        
                 </div>
                 <div class="row">
                   <div class="col-md-4 mb-5">
-                        <i class="fa fa-camera-retro fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Extinction</h4>
+                       <img src="https://img.icons8.com/ios-filled/50/000000/dinosaur.png" class="animated infinite rollIn">
+					   <h4 class="my-4 font-weight-bold">Extinction</h4>
                         <p class="grey-text">Extinction, in biology, the dying out or extermination of a species. Extinction occurs when species are diminished because of environmental forces (habitat fragmentation, global change, natural disaster, overexploitation of species for human use) or because of evolutionary changes in their members .</p>
                     </div>
                     <div class="col-md-4 mb-1">
-                        <i class="fa fa-heart fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold"> Endangered</h4>
+                   <img src="https://img.icons8.com/ios-filled/50/000000/whale.png" class="animated infinite jackInTheBox">
+				   <h4 class="my-4 font-weight-bold"> Endangered</h4>
                         <p class="grey-text"> Endangered species, any species that is at risk of extinction because of a sudden rapid decrease in its population or a loss of its critical habitat. Previously, any species of plant or animal that was threatened with extinction could be called an endangered species. 
-</p>
+</p>    
                     </div>
                     <div class="col-md-4 mb-1">
-                        <i class="fa fa-bicycle fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Adventure</h4>
+                        <img src="https://img.icons8.com/ios-glyphs/64/000000/restart-love.png" class="animated infinite rollIn">
+						<h4 class="my-4 font-weight-bold">Revive</h4>
                         <p class="grey-text">De-extinction, also known as resurrection biology, or species revivalism is the process of creating an organism, which is either a member of, or resembles an extinct species, or breeding population of such organisms.</p>
                     </div>
-
+        
                 </div>
-
+        
             </section>
             <!-full team information->
             <section class="team">
-                <div class="container">
-                    <h1 class="ot">Our Team</h1>
-                    <div class="row">
-                        <div class="col-md-2 profile text-center">
-                            <div class="img-box">
-                                <!-individual team members photo->
-                                <img src="member1.jpg" class="img-responsive" style="height: 200px">
-                                <ul>
-                                    <!-individual team members socialsite->
-                                    <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                                </ul>
-                            </div>
-                            <!-individual team information->
-                            <h2>Kalim</h2>
-                            <h3>Founder/CEO</h3>
-                            <p>We create to this</p>
-                            <p>for helping nature</p> 
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-2 profile text-center">
-                            <div class="img-box">
-                                <!-individual team members photo->
-                                <img src="member1.jpg" class="img-responsive" style="height: 200px">
-                                <ul>
-                                    <!-individual team members socialsite->
-                                    <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                                </ul>
-                            </div>
-                            <!-individual team information->
-                            <h2>Soguffta</h2>
-                            <h3>Co-Founder</h3>
-                            <p>We create to this</p>
-                            <p>for helping nature</p>  
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-2 profile text-center">
-                            <div class="img-box">
-                                <!-individual team members photo->
-                                <img src="member1.jpg" class="img-responsive" style="height: 200px">
-                                <ul><!-individual team members socialsite->
-                                    <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                                </ul>
-                            </div>
-                            <!-individual team information->
-                            <h2>Neha</h2>
-                            <h3>Managing Director</h3>
-                           <p>We create to this</p>
-                            <p>for helping nature</p>   
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-2 profile text-center">
-                            <div class="img-box">
-                                <!-individual team members photo->
-                                <img src="member1.jpg" class="img-responsive" style="height: 200px">
-                                <ul>
-                                    <!-individual team members socialsite->
-                                    <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                                    <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-                                </ul>
-                            </div>
-                            <!-individual team information->
-                            <h2>Koushik</h2>
-                            <h3>Employee</h3>
-                            <p>We create to this</p>
-                            <p>for helping nature</p>  
-                        </div>
-
-
-
-
-
-
-
+<h1>Team Section</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="single-team">
+                    <div class="side-one">
+<img src="https://img.icons8.com/dusk/64/000000/working-with-a-laptop.png">					   <h3>KOUSHIK</h3>
+                        <p> Web-Desighner</p>
+                    </div>
+                    <div class="side-two">
+                        <span>
+                            KOUSHIK is our Web-desighner for the last 2 years.He is equiped with excellent abilities of completing and analayzing a project desings.He also have his own projects hosted over the web.
+                        </span>
+                        <p class="socials">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </p>
                     </div>
                 </div>
-            </section>
-       <div>    
-            <hr class="my-5">
-<!-contact us->
-           <section id="contact">
-
-                <h2 class="mb-5 font-weight-bold text-center" id="cu">Contact us</h2>
-                <div class="row">
-            <div class="col-12">
-                
-                <p class="mb-5">
-                  Nullam tincidunt, lacus a suscipit luctus, elit turpis tincidunt dui,
-                  non tempus sem turpis vitae lorem. Maecenas eget odio in sapien ultrices
-                  viverra vitae vel leo. Curabitur at elit eu risus pharetra pellentesque
-                  at at velit.
-                </p>
+            </div>
+            <div class="col-lg-4">
+                <div class="single-team">
+                    <div class="side-one">
+                        <img src="https://img.icons8.com/color/480/000000/edit-user-female.png" >
+                        <h3>NEHA</h3>
+                        <p>Content-Writer</p>
+                    </div>
+                    <div class="side-two">
+                        <span>
+                           NEHA is our Content-Writer for the last 2 years.She has successfully completed over 20 projects on her own.she has a good knowlege over the words.
+                        </span>
+                        <p class="socials">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="single-team">
+                    <div class="side-one">
+		<img src="https://img.icons8.com/color/240/000000/guest-female.png">
+		<h3>SHAGUFA</h3>
+                        <p>Frontend-devoloper</p>
+                    </div>
+                    <div class="side-two">
+                        <span>
+                            SHAGUFA is our Lead Frontend-devoloper for the last 2 years.She have good command over the topic.
+                        </span>
+                        <p class="socials">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div>   
             </div>
             
             <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
@@ -440,17 +534,15 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             </div>
         </div>
             </section>
-
+        
         </div>
     </main>
     <!-footer copy right->
     <footer class="page-footer font-small unique-color-dark">
-
-
-        <div class="footer-copyright text-center py-3">© 2019 Copyright:
-            <a href=""> ENDANGER WORK</a>
-        </div>
+        
+        
         <!-company social sites->
+		<div id="logo">
                 <div class="container" style="justify-content: center;">
   <div class="row justify-content-center">
     <div class="col-md-1"></div>
@@ -461,50 +553,33 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
     <div class="col-md-3">
       <a href="#" class="link"><img src="https://img.icons8.com/officel/80/000000/twitter.png"></a>
     </div>
-   
+        
     <div class="col-md-3">
        <a href="#" class="link"><img src="https://img.icons8.com/color/96/000000/instagram-new.png"></a>
-
+        
     </div>
-
+        
   </div>
-</div>
-          
-    </footer>
+</div>  
+          </div>
+<div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="">WILDLIFE IN DANGER</a>
+        </div>
+            </footer>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.4.0/lib/darkmode-js.min.js"></script>
-<script type="text/javascript">
-   // $(document).ready(function(){
-  //    $('.toggle').click(function(){
-  //          $('.toggle').toggleClass('active')
-  //          $('body').toggleClass('night')
-  //      })
-  //  })
-  const options = 
-  {
-      bottom: '64px', // default: '32px'
-  right: 'unset', // default: '32px'
-  left: '32px', // default: 'unset'
-  time: '0.5s', // default: '0.3s'
-  mixColor: '#fff', // default: '#fff'
-  backgroundColor: '#fff',  // default: '#fff'
-  buttonColorDark: '#100f2c',  // default: '#100f2c'
-  buttonColorLight: '#fff', // default: '#fff'
-  saveInCookies: false, // default: true,
-  label: '🌓', // default: ''
-  autoMatchOsTheme: true // default: true
-  }
-  const darkmode = new Darkmode(options);
-
-  darkmode.showWidget();
-  
+        
+        
+        
+        
 </script>
-</body>
-</html>
+</body> 
+</html> 
+        
+        
